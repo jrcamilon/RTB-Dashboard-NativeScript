@@ -23,18 +23,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     @ViewChild("myWebView") webViewRef: ElementRef;
 
     ngOnInit() {
-        this.checkPlatformType();
-    }
 
-    checkPlatformType() {
-        let message = "";
-        if (platformModule.isAndroid) {
-            message = "You are using Android device";
-        } else if (platformModule.isIOS) {
-            message = "You are using IOS device";
-        }
-
-        console.log(message);
     }
 
     ngAfterViewInit() {
